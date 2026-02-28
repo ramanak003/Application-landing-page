@@ -55,8 +55,8 @@ praxisapplanding/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Gokulakrishnxn/praxis-app-landing-webpage.git
-   cd praxis-app-landing-webpage
+   git clone https://github.com/ramanak003/Application-landing-page.git
+   cd Application-landing-page
    ```
 
 2. **Install dependencies**

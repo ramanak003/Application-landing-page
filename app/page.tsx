@@ -90,7 +90,7 @@ export default function PraxisLandingPage() {
                   <div
                     key={i}
                     className="w-2 bg-accent rounded-full animate-pulse"
-                    style={{ height: `${Math.random() * 20 + 10}px`, animationDelay: `${i * 100}ms` }}
+                    style={{ height: `${((i * 7) % 20) + 10}px`, animationDelay: `${i * 100}ms` }}
                   ></div>
                 ))}
               </div>

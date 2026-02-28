@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
+const isGithubActions = process.env.GITHUB_ACTIONS === "true"
+
 const nextConfig = {
   output: "export",
-  basePath: process.env.NODE_ENV === "production" ? "/Application-landing-page" : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/Application-landing-page" : "",
+  basePath: isGithubActions ? "/Application-landing-page" : "",
+  assetPrefix: isGithubActions ? "/Application-landing-page" : "",
   eslint: {
     ignoreDuringBuilds: true,
   },

@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/Application-landing-page",
-  assetPrefix: "/Application-landing-page",
+  basePath: process.env.NODE_ENV === "production" ? "/Application-landing-page" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/Application-landing-page" : "",
   eslint: {
     ignoreDuringBuilds: true,
   },

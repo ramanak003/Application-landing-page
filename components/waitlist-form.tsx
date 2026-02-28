@@ -1,8 +1,8 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
+import { createClient } from "@/lib/supabase/client"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { CheckCircle, Loader2 } from "lucide-react"
@@ -18,23 +18,20 @@ export function WaitlistForm() {
     setMessage("")
 
     try {
-      const response = await fetch("/api/waitlist", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      })
+      const supabase = createClient()
+      const { error } = await supabase.from("waitlist").insert([{ email }]).select()
 
-      const data = await response.json()
-
-      if (response.ok) {
+      if (!error) {
         setStatus("success")
         setMessage("Thanks! You'll be notified when Praxis launches.")
         setEmail("")
       } else {
         setStatus("error")
-        setMessage(data.error || "Something went wrong. Please try again.")
+        if (error.code === "23505") {
+          setMessage("Email already registered")
+        } else {
+          setMessage(error.message || "Something went wrong. Please try again.")
+        }
       }
     } catch (error) {
       setStatus("error")

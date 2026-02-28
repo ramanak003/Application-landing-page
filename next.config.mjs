@@ -3,8 +3,8 @@ const isGithubActions = process.env.GITHUB_ACTIONS === "true"
 
 const nextConfig = {
   output: "export",
-  basePath: isGithubActions ? "/praxis-app-landing-webpage" : "",
-  assetPrefix: isGithubActions ? "/praxis-app-landing-webpage" : "",
+  basePath: isGithubActions ? "/Application-landing-page" : "",
+  assetPrefix: isGithubActions ? "/Application-landing-page" : "",
   eslint: {
     ignoreDuringBuilds: true,
   },

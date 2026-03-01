@@ -25,3 +25,5 @@ INSERT INTO public.reviews (name, role, company, content, rating, featured) VALU
 ('Marcus Rodriguez', 'Startup Founder', 'InnovateLab', 'I''ve tried dozens of productivity apps, but Praxis is the first one that actually understands my workflow. Game-changer.', 5, true),
 ('Emily Watson', 'Designer', 'Creative Studio', 'The interface is beautiful and the AI recommendations have helped me optimize my daily routine. Can''t wait for the full release!', 5, true),
 ('David Kim', 'Developer', 'CodeBase Inc', 'Finally, an AI app that doesn''t feel gimmicky. Praxis delivers real value and genuine productivity improvements.', 5, true);
+
+

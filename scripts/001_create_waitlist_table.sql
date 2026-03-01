@@ -18,3 +18,5 @@ CREATE POLICY "Allow public email signup" ON public.waitlist
 CREATE POLICY "Allow users to view all emails" ON public.waitlist
   FOR SELECT 
   USING (true);
+
+

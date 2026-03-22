@@ -167,7 +167,7 @@ export default function PraxisLandingPage() {
               </div>
               <div className="flex-1">
                 <div className="text-sm font-medium">John shared a document</div>
-                <div className="text-xs text-muted-foreground">2 minutes ago</div>
+                <div className="text-xs text-muted-foreground">3 weeks ago</div>
               </div>
             </div>
             <div className="flex items-center space-x-3 p-2 bg-card rounded">
@@ -176,7 +176,7 @@ export default function PraxisLandingPage() {
               </div>
               <div className="flex-1">
                 <div className="text-sm font-medium">AI suggested improvements</div>
-                <div className="text-xs text-muted-foreground">5 minutes ago</div>
+                <div className="text-xs text-muted-foreground">3 weeks ago</div>
               </div>
             </div>
           </div>
@@ -712,7 +712,7 @@ export default function PraxisLandingPage() {
               </a>
             </div>
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              © 2024 Praxis. All rights reserved.
+              © 2026 Praxis. All rights reserved.
             </p>
           </div>
         </div>
